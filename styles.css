@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.3rem;
+}
+.container {
+  background-color: rgb(107, 87, 87);
+  height: 300px;
+  width: 240px;
+
+  display: grid;
+  grid-template-areas:
+    "answer answer answer answer"
+    "AC AC DEL division";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+  padding: 1rem;
+}
+.answer {
+  background-color: red;
+  grid-area: answer;
+}
+.AC {
+  background-color: aqua;
+  grid-area: AC;
+}
+.DEL {
+  background-color: aqua;
+  grid-area: DEL;
+}
+.divide {
+  background-color: aqua;
+  grid-area: division;
+}
+.btn {
+  display: flex;
+  background-color: aqua;
+  align-items: center;
+  justify-content: center;
+}
+.equal {
+  grid-column: span 2;
+}
+.answer {
+  background-color: red;
+  grid-area: answer;
+}
+
+.btn:nth-child(1) {
+  justify-content: end;
+  padding: 1rem;
+}
