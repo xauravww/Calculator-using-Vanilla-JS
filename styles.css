@@ -8,7 +8,7 @@ body {
   font-size: 1.3rem;
 }
 .container {
-  background-color: rgb(107, 87, 87);
+  background-color: rgb(55, 52, 52);
   height: 300px;
   width: 240px;
 
@@ -38,16 +38,26 @@ body {
 }
 .btn {
   display: flex;
-  background-color: aqua;
+  background-color: rgb(242, 248, 248);
   align-items: center;
   justify-content: center;
+  border-radius: 10px;
+}
+.btn:hover {
+  background-color: rgb(99, 122, 122);
+  color: rgb(241, 239, 236);
+  cursor: -webkit-grab;
 }
 .equal {
   grid-column: span 2;
 }
-.answer {
-  background-color: red;
+.answer,
+.answer:hover {
+  box-shadow: 0px 0px 10px rgb(208, 199, 199);
+  background-color: rgb(32, 29, 29);
   grid-area: answer;
+  color: wheat;
+  cursor: copy;
 }
 
 .btn:nth-child(1) {
